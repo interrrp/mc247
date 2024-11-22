@@ -16,7 +16,6 @@ func (b *Bot) startRejoinTask() {
 				continue
 			}
 			b.joinServer()
-			b.connected = true
 		}
 	}()
 }

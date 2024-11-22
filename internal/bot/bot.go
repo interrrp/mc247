@@ -50,6 +50,7 @@ func (b *Bot) joinServer() {
 		b.logger.Error("failed joining server, rejoining after 5 seconds", "err", err)
 		time.Sleep(5 * time.Second)
 	}
+	b.connected = true
 	b.logger.Info("joined server")
 }
 
